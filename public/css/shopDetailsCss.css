@@ -1,4 +1,4 @@
-.outer{
+  .outer{
     display: flex;
     flex-direction: row; 
   }
@@ -31,3 +31,22 @@
     border-color: #000;
     background-color: #000;
   } 
+  
+  @media screen and (max-width: 1000px) {
+    .outer{
+      display: flex;
+      flex-direction: column; 
+    }
+    #productImg{
+      width: 70%;
+      height: auto;
+    /* justify-content: center; */
+    }
+    .left{
+      display: flex;
+      justify-content: center;
+    }
+    .right{
+      margin-left: 0rem;
+    }
+  }
